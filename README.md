@@ -2,14 +2,14 @@
 
 ## 6장 리덕스
 
-프로젝트 생성
-$ npx create-react-app learn-redux
+프로젝트 생성  
+$ npx create-react-app learn-redux    
 
-리덕스 라이브러리 설치
+리덕스 라이브러리 설치  
 $ cd learn-redux  
-$ yarn add redux
+$ yarn add redux    
 
-리액트에 리덕스 적용하기 위한 라이브러리 설치
+리액트에 리덕스 적용하기 위한 라이브러리 설치  
 $ yarn add react-redux
 
 
