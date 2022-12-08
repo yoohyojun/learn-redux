@@ -1,6 +1,18 @@
 # 리액트 연습용 프로젝트
 
 ## 6장 리덕스
+
+프로젝트 생성
+$ npx create-react-app learn-redux
+
+리덕스 라이브러리 설치
+$ cd learn-redux
+$ yarn add redux
+
+리액트에 리덕스 적용하기 위한 라이브러리 설치
+$ yarn add react-redux
+
+
   ● 1. 리덕스에서 사용되는 키워드 (https://react.vlpt.us/redux/01-keywords.html)  
       액션 (Action)
       상태에 변화가 필요할 때 발생시킴, 아래처럼 객체로 표현됨
