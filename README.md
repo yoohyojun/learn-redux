@@ -6,7 +6,7 @@
 $ npx create-react-app learn-redux
 
 리덕스 라이브러리 설치
-$ cd learn-redux
+$ cd learn-redux  
 $ yarn add redux
 
 리액트에 리덕스 적용하기 위한 라이브러리 설치
