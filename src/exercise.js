@@ -71,12 +71,12 @@ function reducer(state = initialState, action) {
 
 //스토어 만들기
 const store = createStore(reducer);
-console.log(store.getState()); //현재 store 안에 들어있는 상태를 조회합니다.
+//console.log(store.getState()); //현재 store 안에 들어있는 상태를 조회합니다.
 
 // 스토어안에 들어있는 상태가 바뀔 때 마다 호출되는 listener 함수
 const listener = () => {
     const state = store.getState();
-    console.log(state);
+    //console.log(state);
 }
 
 const unsubscribe = store.subscribe(listener);

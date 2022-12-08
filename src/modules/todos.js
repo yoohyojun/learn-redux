@@ -4,11 +4,11 @@ const TOGGLE_TODO = 'todos/TOGGLE_TODO';
 
 
 //액션함수
-let nextId = 1; // todo 데이터에서 사용할 고유 id
+let nextId = 1; // todo의 데이터에서 사용할 고유 id
 export const addTodo = text => ({
     type: ADD_TODO,
     todo: {
-        id : nextId++,
+        id : nextId++, // 새 항목을 추가하고 nextId 값에 1을 더해줍니다.
         text
     }
 });
@@ -31,7 +31,7 @@ const initialState = [
     */
 ];
 
-//리듀서함수
+// 리듀서
 export default function todos(state = initialState, action) {
 
     switch (action.type) {
@@ -39,6 +39,7 @@ export default function todos(state = initialState, action) {
             return state.concat(action.todo)
         case TOGGLE_TODO:
             return state.map(todo =>
+                // id 가 일치하면 todo의 done 값을 반전시키고 아니면 todo를 그대로 반환
                 todo.id == action.id ? {...todo, done: !todo.done} : todo
             );
         default: return state;
